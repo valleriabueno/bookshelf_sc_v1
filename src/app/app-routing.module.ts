@@ -5,7 +5,7 @@ const routes: Routes = [
   {path:'', pathMatch:'full', redirectTo:'cdd'},
   {
     path: 'cdd',
-    loadChildren: () => import('./cdd/cdd-routing.module').then(m => m.CddRoutingModule)
+    loadChildren: () => import('./cdd/cdd.module').then(m => m.CddModule)
   }
 ];
 

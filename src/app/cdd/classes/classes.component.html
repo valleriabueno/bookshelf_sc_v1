@@ -1,3 +1,23 @@
-<div>
-  Componente CDD/Classes
-</div>
+<table mat-table [dataSource]="livrosGeneros" class="mat-elevation-z8">
+
+  <!-- ID Genero-->
+  <ng-container matColumnDef="_idGenero">
+    <th mat-header-cell *matHeaderCellDef>Codigo CDD</th>
+    <td mat-cell *matCellDef="let generos"> {{ generos._idGenero }} </td>
+  </ng-container>
+
+  <!-- Nome do Genero -->
+  <ng-container matColumnDef="nomeGenero">
+    <th mat-header-cell *matHeaderCellDef> Nome do Genero </th>
+    <td mat-cell *matCellDef="let generos"> {{ generos.nomeGenero }} </td>
+  </ng-container>
+
+  <!-- Decimal Genero -->
+  <ng-container matColumnDef="decimalGenero">
+    <th mat-header-cell *matHeaderCellDef> Fator Decimal </th>
+    <td mat-cell *matCellDef="let generos"> {{ generos.decimalGenero }} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="visaoColunas"></tr>
+  <tr mat-row *matRowDef="let row; columns: visaoColunas;"></tr>
+</table>
