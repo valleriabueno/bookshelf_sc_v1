@@ -6,12 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './app-compartilhado/app-material/app-material.module';
-import { PipesPipe } from './app-compartilhado/app-compartilhado/app-pipes/pipes.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PipesPipe
+    AppComponent
   ],
   imports: [
     BrowserModule,
