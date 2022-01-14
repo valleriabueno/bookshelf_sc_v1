@@ -1,7 +1,7 @@
 import { Generos } from './../modelos/generos';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { delay } from 'rxjs';
+import { delay, first, tap} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,9 @@ export class GenerosService {
   listagemGeneros() {
     return this.clienteDados.get<Generos[]>(this.urlAPI)
     .pipe(
-      delay(3000)
+      first(),
+      delay(500),
+      tap(apiGeneros => console.log(apiGeneros))
     )
   }
 }

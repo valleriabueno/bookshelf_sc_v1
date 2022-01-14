@@ -4,3 +4,10 @@ table {
 .example-spacer {
   flex: 1 1 auto;
 }
+.loading-spinner{
+  background-color: rgb(221, 221, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
