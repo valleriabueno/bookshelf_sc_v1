@@ -1,0 +1,27 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>{{tituloNav}}</mat-toolbar>
+    <p><mat-icon aria-label="Usuário">{{usuario.icone}}</mat-icon> {{usuario.userName}}</p>
+    <mat-nav-list *ngFor="let itemMenu of itensMenu">
+      <a mat-list-item *ngIf="itemMenu.hab === true" [href]="itemMenu.linkMenu">{{itemMenu.labelMenu}}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Menu BookShelf Lateral">menu</mat-icon>
+      </button>
+      <img mat-card-sm-image [width]="lIcone" [height]="aIcone" [src]="iconeGeral" >
+      <span>{{tituloBarra}}</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
