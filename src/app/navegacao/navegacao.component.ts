@@ -1,6 +1,8 @@
+import { MenuNavegador } from './../modelosInterface/menuNavegador';
+import { NavegacaoService } from './../servicosInterface/navegacao.service';
 import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
+import { Observable, catchError, of } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
 @Component({
@@ -19,21 +21,23 @@ export class NavegacaoComponent {
   lIcone=80;
   aIcone=80;
   //Controle das rotas do menu.
-  itensMenu =[
-    {linkMenu: '/cdd', labelMenu:'Classes Dewey', hab: true},
-    {linkMenu: '/feed', labelMenu:'Feed Notícias', hab: true},
-    {linkMenu: '/clube', labelMenu:'Pagina Usuário', hab: false},
-    {linkMenu: '/leitura', labelMenu:'Clubes de Leitura', hab: false},
-    {linkMenu: '/estante', labelMenu:'Estante Particular', hab: false}
-  ]
-
-
+  itensMenu$: Observable<MenuNavegador[]>
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private navegadorService: NavegacaoService
+    ) {
+      this.itensMenu$ = navegadorService.listagemMenu()
+      .pipe(
+        catchError(error =>{
+          return of([])
+        })
+      )
+    }
 
 }
