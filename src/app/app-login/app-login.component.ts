@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+
+import { AutenticacaoFirebaseService } from './../servicosInterface/autenticacao-firebase.service';
 
 @Component({
   selector: 'app-app-login',
@@ -12,8 +15,19 @@ export class AppLoginComponent {
     senha: new FormControl('', Validators.required)
   });
 
-  constructor(private loginBuilder: FormBuilder) {}
+  constructor(
+    private loginBuilder: FormBuilder,
+    @Inject(MAT_DIALOG_DATA) public conteudo:string,
+    private autenticacaoFirebaseService: AutenticacaoFirebaseService
+    ) {}
 
+    get email(){
+      return this.formularioLogin.get('email')
+    }
+
+    get senha(){
+      return this.formularioLogin.get('senha')
+    }
   onSubmit(){
   }
 }
