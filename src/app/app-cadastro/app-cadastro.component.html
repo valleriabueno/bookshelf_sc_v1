@@ -1,0 +1,15 @@
+<form [formGroup]="formularioCadastro" (ngSubmit)="enviaCadastro()">
+  <mat-form-field>
+    <input matInput placeholder="Email de Login" formControlName="email">
+    <mat-error *ngIf="email?.errors?.['required']">Será necessário informar um e-mail</mat-error>
+    <mat-error *ngIf="email?.errors?.['email']">O formato do e-mail não é valido</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Entre coma senha" formControlName="senha" type="password">
+    <mat-error *ngIf="senha?.errors?.['required']">Esqueceu a senha</mat-error>
+  </mat-form-field>
+  <mat-card-footer>
+    <button mat-raised-button color="accent" type="submit">Entrar</button>
+    <button mat-raised-button mat-dialog-close color="primary">Fechar</button>
+  </mat-card-footer>
+</form>
