@@ -73,7 +73,6 @@ export class AppCadastroComponent implements OnInit {
         this.rotas.navigate(['/'])
       });
   }
-
   ngOnInit(): void {
   }
 }

@@ -14,9 +14,10 @@
       </button>
       <img mat-card-sm-image [width]="lIcone" [height]="aIcone" [src]="iconeGeral">
       <ng-container *ngIf="usuario$ | async as usuario; else botaoLogin">
-        <button mat-raised-button color="primary" (click)="sairUsuario()">
-          <mat-icon class="mat-18">logout</mat-icon>
-          LOGOUT
+        <button mat-raised-button color="primary" [matMenuTriggerFor]="usuarioMenu">
+          <mat-icon class="mat-18">local_library</mat-icon>
+          {{usuario.displayName}}
+          <mat-icon>expand_more</mat-icon>
         </button>
       </ng-container>
       <ng-template #botaoLogin>
@@ -26,6 +27,9 @@
         </button>
       </ng-template>
     </mat-toolbar>
+    <mat-menu #usuarioMenu="matMenu">
+      <button mat-menu-item (click)="sairUsuario()">LOGOUT</button>
+    </mat-menu>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
