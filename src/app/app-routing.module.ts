@@ -1,11 +1,17 @@
+import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { FeedComponent } from './feed/feed.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'feed' },
   {
-    path: 'feed', component:FeedComponent
+    path: '', pathMatch: 'full', redirectTo: 'feed'
+  },
+  {
+    path:'app-app-cadastro', component: AppCadastroComponent
+  },
+  {
+    path: 'feed', component: FeedComponent
   },
   {
     path: 'cdd',
