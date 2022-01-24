@@ -4,13 +4,22 @@
     <mat-grid-tile *ngFor="let card of cards$ | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
         <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-          </mat-card-title>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{card.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{card.subtitulo}}</mat-card-subtitle>
         </mat-card-header>
+        <img mat-card-image [src]="card.img" [alt]="card.titulo">
         <mat-card-content class="dashboard-card-content">
-          <div></div>
+          <div>{{card.conteudo}}</div>
         </mat-card-content>
+        <mat-nav-list>
+          <mat-list-item *ngFor="let link of card.link">
+            <a matLine [href]="link.ref">{{ link.texto }}</a>
+            <button mat-icon-button>
+              <mat-icon>info</mat-icon>
+            </button>
+          </mat-list-item>
+        </mat-nav-list>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
