@@ -1,6 +1,66 @@
 [
-  { "title": "O melhor Livro de Janeiro", "img": "../../assets/imagens/1.png", "cols": 2, "rows": 1 },
-  { "title": "Dica dos Leitores", "img": "../../assets/imagens/2.png", "cols": 1, "rows": 1 },
-  { "title": "O mais comentado da semana", "img": "../../assets/imagens/3.png", "cols": 1, "rows": 2 },
-  { "title": "Indicação do Time BookShelf", "img": "../../assets/imagens/4.png", "cols": 1, "rows": 1 }
+  {
+    "titulo": "O melhor Livro de Janeiro",
+    "subtitulo":"Os melhores livros do início do ano.",
+    "img": "../../assets/imagens/cover1.png",
+    "conteudo":"Vamos listar o que de melhor foi lançado no mês de janeiro de 2022, também vamos tratar do detaque para The Witcher e sua coleção de livros.",
+    "link":[
+      {"ref":"https://www.theenemy.com.br/social/criticas/review-the-witcher-temporada-2#:~:text=Honestamente%2C%20a%20breve%20apari%C3%A7%C3%A3o%20da,Ciri%20em%20termos%20de%20magia.", "texto":"The Enemy"},
+      {"ref":"https://jovemnerd.com.br/nerdbunker/the-witcher-vale-a-pena-os-livros/","texto":"Jovem Nerd"}
+    ],
+    "cols": 2,
+    "rows": 3
+  },
+  {
+    "titulo": "Dica de Livros: Ler e Pensar",
+    "subtitulo":"Livros que vão fazer você pensar e repensar",
+    "img": "../../assets/imagens/cover2.png",
+    "conteudo":"Lista de livros que vão fazer você pensar sobre assuntos de existência pessoal e outras alegorias para filosofia geral",
+    "link":[
+      {"ref":"https://exame.com/carreira/13-livros-para-pensar-e-fazer-diferente-daqui-para-frente/", "texto":"Revista Exame"},
+      {"ref":"https://www.pensador.com/livros_para_mudar_a_sua_vida/","texto":"O Pensador"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Clube do Livro: Sugestões de Livros",
+    "subtitulo":"Em janeiro vamos disponibilizar livros que promovam as discussões",
+    "img": "../../assets/imagens/cover3.png",
+    "conteudo":"Aqui você vai encontrar os livros que serão as melhores fontes de debates e construção de retórica para o mês de janeiro.",
+    "link":[
+      {"ref":"https://www.prolivro.org.br/2021/01/20/ciclo-de-debates-da-retratos-da-leitura/", "texto":"Pró-Livro"},
+      {"ref":"https://brasilescola.uol.com.br/literatura/capitu-traiu-bentinho.htm","texto":"Brasil Escola"},
+      {"ref":"https://teoriaedebate.org.br/estante/a-ditadura-envergonhada-v-1-a-ditadura-escancarada-v-2/","texto":"Teoria e Debate"},
+      {"ref":"https://brasilescola.uol.com.br/literatura/capitu-traiu-bentinho.htm","texto":"Brasil Escola"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Educação e Leitura: Fundação Victor Civita",
+    "subtitulo":"Carlos Leite e os 50 livros da história",
+    "img": "../../assets/imagens/cover4.png",
+    "conteudo":"Aqui você vai encontrar os livros que serão as melhores fontes de debates e construção de retórica para o mês de janeiro.",
+    "link":[
+      {"ref":"https://fvc.org.br/", "texto":"Biblioteca FVC"},
+      {"ref":"https://www.revistabula.com/7802-os-melhores-livros-da-historia-da-literatura/","texto":"Revista Bula"},
+      {"ref":"https://www.amazon.com.br/b?ie=UTF8&node=6311441011","texto":"Anazon Livros Gratuitos"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Educação e Leitura: Fundação Victor Civita",
+    "subtitulo":"Carlos Leite e os 50 livros da história",
+    "img": "../../assets/imagens/cover4.png",
+    "conteudo":"Aqui você vai encontrar os livros que serão as melhores fontes de debates e construção de retórica para o mês de janeiro.",
+    "link":[
+      {"ref":"https://fvc.org.br/", "texto":"Biblioteca FVC"},
+      {"ref":"https://www.revistabula.com/7802-os-melhores-livros-da-historia-da-literatura/","texto":"Revista Bula"},
+      {"ref":"https://www.amazon.com.br/b?ie=UTF8&node=6311441011","texto":"Anazon Livros Gratuitos"}
+    ],
+    "cols": 1,
+    "rows": 2
+  }
 ]
