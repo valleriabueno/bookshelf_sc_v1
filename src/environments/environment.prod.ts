@@ -1,12 +1,12 @@
 export const environment = {
   firebase: {
-    projectId: 'bookshelfv2-43e39',
-    appId: '1:661229688833:web:c23af54d97bf16b9254800',
-    storageBucket: 'bookshelfv2-43e39.appspot.com',
-    apiKey: 'AIzaSyCd5WPSKqGmqAHgOhHFMr5ZHR9yK64YU0M',
-    authDomain: 'bookshelfv2-43e39.firebaseapp.com',
-    messagingSenderId: '661229688833',
-    measurementId: 'G-TF6E84D00J',
+    apiKey: "AIzaSyASIDBOJl4mWTcZ2tM_viDfM0wOTjUzd-M",
+    authDomain: "bookshelfv3-c4224.firebaseapp.com",
+    projectId: "bookshelfv3-c4224",
+    storageBucket: "bookshelfv3-c4224.appspot.com",
+    messagingSenderId: "557722969988",
+    appId: "1:557722969988:web:c303874c8c5c79ab199fd1",
+    measurementId: "G-2MR1GYR3S3"
   },
   production: true
 };
