@@ -3,28 +3,54 @@
   <mat-card>
     <img mat-card-image src="../../assets/imagens/cover2.png" alt="Cover do Cadastro de Usuários">
     <form [formGroup]="formularioCadastro" (ngSubmit)="enviaCadastro()">
-      <mat-form-field>
-        <input matInput placeholder="Entre com seu nome" formControlName="nome">
-        <mat-error *ngIf="nome?.errors?.['required']">Será necessário seu nome.</mat-error>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput placeholder="Email de Login" formControlName="email">
-        <mat-error *ngIf="email?.errors?.['required']">Será necessário informar um e-mail</mat-error>
-        <mat-error *ngIf="email?.errors?.['email']">O formato do e-mail não é valido</mat-error>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput placeholder="Entre com senha" formControlName="senha" type="password">
-        <mat-error *ngIf="senha?.errors?.['required']">Esqueceu a senha</mat-error>
-      </mat-form-field>
-      <mat-form-field>
-        <input matInput placeholder="Confirme a senha anterior" formControlName="confirmaSenha" type="password">
-        <mat-error *ngIf="senha?.errors?.['required']">Entre coma a confirmação</mat-error>
-        <mat-error *ngIf="formularioCadastro.errors?.['senhaConfirmada']">Entre coma a confirmação</mat-error>
-      </mat-form-field>
-      <mat-card-footer>
-        <button mat-button color="accent" type="submit">Cadastrar</button>
-        <button mat-button color="primary">Fechar</button>
-      </mat-card-footer>
+      <mat-stepper #stepper linear>
+        <mat-step #step1 errorMessage="Este campo é obrigatório!" [hasError]="nome?.errors?.['required'] && step1.interacted">
+          <ng-template matStepLabel>Insira seu nome</ng-template>
+          <mat-form-field>
+            <input matInput placeholder="Entre com seu nome" formControlName="nome" required>
+            <mat-error *ngIf="nome?.errors?.['required']">Será necessário seu nome.</mat-error>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious type="button">Back</button>
+            <button mat-button matStepperNext type="button">Next</button>
+          </div>
+        </mat-step>
+        <mat-step #step2 errorMessage="E-mail inválido!" [hasError]="(email?.errors?.['required'] || email?.errors?.['email']) && step2.interacted">
+        <ng-template matStepLabel>Insira seu E-mail</ng-template>
+          <mat-form-field>
+            <input matInput placeholder="Email de Login" formControlName="email">
+            <mat-error *ngIf="email?.errors?.['required']">Será necessário informar um e-mail</mat-error>
+            <mat-error *ngIf="email?.errors?.['email']">O formato do e-mail não é valido</mat-error>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious type="button">Back</button>
+            <button mat-button matStepperNext type="button">Next</button>
+          </div>
+        </mat-step>
+        <mat-step #step3 errorMessage="Este campo é obrigatório!" [hasError]="senha?.errors?.['required'] && step3.interacted">
+          <ng-template matStepLabel>Insira uma senha</ng-template>
+          <mat-form-field>
+            <input matInput placeholder="Entre com senha" formControlName="senha" type="password">
+            <mat-error *ngIf="senha?.errors?.['required']">Esqueceu a senha</mat-error>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious type="button">Back</button>
+            <button mat-button matStepperNext type="button">Next</button>
+          </div>
+        </mat-step>
+        <mat-step #step4 errorMessage="Este campo é obrigatório!" [hasError]="confirmaSenha?.errors?.['required'] && step4.interacted">
+          <ng-template matStepLabel>Confirme a senha</ng-template>
+          <mat-form-field>
+            <input matInput placeholder="Confirme a senha anterior" formControlName="confirmaSenha" type="password">
+            <mat-error *ngIf="senha?.errors?.['required']">Entre coma a confirmação</mat-error>
+            <mat-error *ngIf="formularioCadastro.errors?.['senhaConfirmada']">Entre coma a confirmação</mat-error>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious type="button">Back</button>
+            <button mat-button color="accent" type="submit">Cadastrar</button>
+          </div>
+        </mat-step>
+      </mat-stepper>
     </form>
   </mat-card>
 </mat-grid-list>
