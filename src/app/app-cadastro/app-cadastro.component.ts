@@ -1,3 +1,4 @@
+import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -22,7 +23,12 @@ export function passwordMatchValidator(): ValidatorFn {
 @Component({
   selector: 'app-app-cadastro',
   templateUrl: './app-cadastro.component.html',
-  styleUrls: ['./app-cadastro.component.scss']
+  styleUrls: ['./app-cadastro.component.scss'],
+  providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: {showError: true},
+    },]
 })
 export class AppCadastroComponent implements OnInit {
 
