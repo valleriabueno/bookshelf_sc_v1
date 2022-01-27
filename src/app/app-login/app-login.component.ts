@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
 
@@ -22,6 +22,7 @@ export class AppLoginComponent {
   constructor(
     private loginBuilder: FormBuilder,
     @Inject(MAT_DIALOG_DATA) public conteudo:string,
+    private telaLogin: MatDialog,
     private toast: HotToastService,
     private rotas: Router,
     private autenticacaoFirebaseService: AutenticacaoFirebaseService
@@ -47,7 +48,9 @@ export class AppLoginComponent {
           error: 'Algo deu errado, confira as informações'
         })
       ).subscribe(()=>{
-        this.rotas.navigate(['/cdd'])
+        this.rotas.navigate(['/cdd']);
+        //Ao direcionar para a rota, feche o diálogo.
+        this.telaLogin.closeAll();
       })
   }
 }
