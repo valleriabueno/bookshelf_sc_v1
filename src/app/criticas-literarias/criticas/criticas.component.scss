@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+.capa {
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+mat-card {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+mat-card-content {
+  display: flex;
+  justify-content: center;
+  button{
+    justify-self: end;
+  }
+}

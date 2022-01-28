@@ -21,6 +21,11 @@ const routes: Routes = [
     path: 'cdd',
     loadChildren: () => import('./cdd/cdd.module').then(c => c.CddModule),
     ...canActivate(enviarSemLogin)
+  },
+  {
+    path: 'criticas',
+    loadChildren: () => import('./criticas-literarias/criticas-literarias.module').then(c => c.CriticasLiterariasModule),
+    ...canActivate(enviarSemLogin) // ???????????
   }
 ];
 
