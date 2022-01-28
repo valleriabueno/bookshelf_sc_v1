@@ -1,0 +1,23 @@
+<div *ngIf="criticas$ | async as criticas">
+  <div *ngFor="let critica of criticas">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{critica.titulo}} - {{critica.autor}}</mat-card-title>
+        <mat-card-subtitle>{{critica.subtitulo}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <img src={{critica.capa}} alt={{critica.titulo}} class="capa">
+        <div>
+          <p>
+            {{critica.critica[0]}}
+          </p>
+          <button (click)="abrirLerMais(critica.critica, critica.titulo, critica.autor)" mat-raised-button color="accent" class="ler-mais">
+            <mat-icon>menu_book</mat-icon>
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
