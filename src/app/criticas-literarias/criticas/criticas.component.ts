@@ -1,5 +1,7 @@
+import { FormControl } from '@angular/forms';
+import { map, startWith } from 'rxjs/operators';
 import { LerMaisComponent } from './../ler-mais/ler-mais.component';
-import { catchError, Observable, of } from 'rxjs';
+import { catchError, Observable, of, tap } from 'rxjs';
 import { CriticasService } from './../service/criticas.service';
 import { Component, OnInit, Inject } from '@angular/core';
 import { Critica } from '../modelos/critica';
@@ -13,6 +15,10 @@ import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 export class CriticasComponent implements OnInit {
   criticas$: Observable<Critica[]>;
 
+  busca?: string
+
+  resultado?: Critica
+
   constructor(
     private criticasService: CriticasService,
     private telaCriticas: MatDialog
@@ -25,15 +31,27 @@ export class CriticasComponent implements OnInit {
     );
   }
 
-  abrirLerMais(critica: [string], titulo: string, autor: string) {
+  abrirLerMais(critica: [string], titulo: string, autor: string, fonte: string, banner:string) {
     this.telaCriticas.open(LerMaisComponent, {
       data: {
         critica: critica,
         titulo: titulo,
-        autor: autor
+        autor: autor,
+        fonte: fonte,
+        banner
       },
     });
   }
 
-  ngOnInit(): void {}
+  buscaCritica(array: Critica[]) {
+    this.resultado = array.find(e => e.titulo == this.busca)
+  }
+
+  voltar() {
+    this.resultado = undefined
+    this.busca = undefined
+  }
+
+  ngOnInit(): void {
+  }
 }

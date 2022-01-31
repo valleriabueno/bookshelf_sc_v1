@@ -5,7 +5,14 @@
     </button>
     <h1>{{data.titulo}} - {{data.autor}}</h1>
   </div>
+  <div class="banner">
+    <img [src]="data.banner" alt="">
+  </div>
   <p *ngFor="let paragrafo of data.critica">
     {{paragrafo}}
   </p>
+  <span>
+    <b>Fonte: </b>
+    <a href={{data.fonte}} target="_blank">{{data.fonte}}</a>
+  </span>
 </mat-dialog-content>

@@ -1,4 +1,4 @@
-import { first, delay, tap } from 'rxjs';
+import { first, delay, tap, filter } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Critica } from '../modelos/critica';
@@ -12,7 +12,6 @@ export class CriticasService {
   constructor(private http: HttpClient) { }
 
   listagemCriticas() {
-    // console.log("teste")
     return this.http.get<Critica[]>(this.url)
       .pipe(
         first(),
