@@ -84,7 +84,7 @@ export class AppCadastroComponent implements OnInit {
             switch (message) {
               case 'Firebase: Password should be at least 6 characters (auth/weak-password).':
                 this.mensagemErro =
-                  'Sua senha precise ter no mínimo 6 caracteres!';
+                  'Sua senha precisa ter no mínimo 6 caracteres!';
                 break;
               case 'Firebase: Error (auth/invalid-email).':
                 this.mensagemErro = 'Endereço de E-mail inválido!';
