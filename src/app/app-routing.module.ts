@@ -1,3 +1,4 @@
+import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { DireitoComponent } from './direito/direito.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { FeedComponent } from './feed/feed.component';
@@ -20,6 +21,10 @@ const routes: Routes = [
   },
   {
     path: 'direito', component: DireitoComponent,
+    ...canActivate(enviarSemLogin)
+  },
+  {
+    path: 'psicologia', component: PsicologiaComponent,
     ...canActivate(enviarSemLogin)
   },
   {

@@ -1,0 +1,82 @@
+[
+  {
+    "position": "1",
+    "titulo": "Desenvolvimento humano",
+    "rosto": "../assets/imagens/pscologia1.jpg",
+    "autor":"Diane E. Papalia",
+    "descricao":"O livro clássico de Papalia e Martorell, Desenvolvimento humano, chega à sua 14ª edição apresentando conteúdos atualizados que permitem aos estudantes uma compreensão ampla da experiência humana em toda sua complexidade e diversidade. A partir de uma abordagem cronológica, o livro, também disponível no formato e-book, acompanha todas as fases do desenvolvimento, desde a formação de uma nova vida até o momento da morte. Para cada etapa, são apresentados dados tanto sobre o desenvolvimento físico e cognitivo quanto sobre o desenvolvimento psicossocial."
+  },
+
+  {
+    "position": "2",
+    "titulo": "Incógnito - As vidas secretas do cérebro",
+    "rosto": "../assets/imagens/pscologia2.jpg",
+    "autor":"David Eagleman",
+    "descricao":"Um dos cientistas mais respeitados da atualidade, diretor de um departamento que leva o seu nome na Baylor College of Medicine, em Houston, o norte-americano David Eagleman é também um autor em ascensão num segmento que não para de ganhar leitores, o da neurociência. Incógnito – as vidas secretas do cérebro, seu título mais recente, que chega agora às livrarias pela Rocco, foi bestseller do The New York Time, eleito melhor livro do ano de seu segmento pela Amazon e pelo jornal The Boston Globe,recomendação de leitura do Wall Street Journal, entre outros destaques. No livro, o autor apresenta os mecanismos não conscientes do cérebro, que dirigem diversas ações cotidianas, à revelia da vontade humana"
+  },
+
+  {
+    "position": "3",
+    "titulo": "Rápido e devagar",
+    "rosto": "../assets/imagens/pscologia3.jpg",
+    "autor":"Daniel Kahneman",
+    "descricao":"Em Rápido e devagar: duas formas de pensar, Daniel Kahneman nos leva a uma viagem pela mente humana e explica as duas formas de pensar: uma é rápida, intuitiva e emocional; a outra, mais lenta, deliberativa e lógica. Kahneman expõe as capacidades extraordinárias - e também os defeitos e vícios - do pensamento rápido e revela a influência das impressões intuitivas nas nossas decisões. Comportamentos tais como a aversão à perda, o excesso de confiança no momento de escolhas estratégicas, a dificuldade de prever o que vai nos fazer felizes no futuro e os desafios de identificar corretamente os riscos no trabalho e em casa só podem ser compreendidos se soubermos como as duas formas de pensar moldam nossos julgamentos. As questões colocadas por Kahneman se revelam muitas vezes inquietantes: é verdade que o sucesso de um investidor é completamente aleatório e que sua habilidade no mercado financeiro é apenas uma ilusão? Por que o medo de perder é mais forte do que o prazer de ganhar? Kahneman revela quando podemos ou não confiar em nossa intuição. Oferece insights práticos e esclarecedores sobre como tomamos decisões nos negócios e na vida pessoal, e como podemos usar diferentes técnicas para nos proteger contra falhas mentais que muitas vezes nos colocam em apuros."
+  },
+
+  {
+    "position": "4",
+    "titulo": "Princípios Básicos de Análise do Comportamento",
+    "rosto": "../assets/imagens/pscologia4.jpg",
+    "autor":"Márcio Borges Moreira",
+    "descricao":"Princípios Básicos de Análise do Comportamento, principal livro-texto brasileiro da área, chega à sua 2ª edição totalmente atualizado. Nesta obra ricamente ilustrada e com uma linguagem dinâmica, os autores proporcionam ao leitor uma visão global do comportamento humano."
+  },
+
+  {
+    "position": "5",
+    "titulo": "Psicopatologia e Semiologia dos Transtornos Mentais",
+    "rosto": "../assets/imagens/pscologia5.jpg",
+    "autor":"Paulo Dalgalarrondo",
+    "descricao":"Nova edição do principal livro-texto de psicopatologia e semiologia psiquiátrica brasileiro, totalmente revista e atualizada de acordo com o DSM-5 e a CID-11! Inclui novo capítulo sobre comunicação não verbal e hotsite com material exclusivo para os leitores da obra."
+  },
+
+  {
+    "position": "6",
+    "titulo": "Inteligência Emocional",
+    "rosto": "../assets/imagens/pscologia6.jpg",
+    "autor":"Daniel Goleman ",
+    "descricao":"Publicado pela primeira vez em 1995, nos Estados Unidos, este livro transformou a maneira de pensar a inteligência. Alterou práticas de educação e mudou o mundo dos negócios. Das fronteiras da psicologia e da neurociência, Daniel Goleman trouxe o conceito de - a racional e a emocional - e explicou como, juntas, elas moldam nosso destino. Segundo Goleman, a consciência das emoções é fator essencial para o desenvolvimento da inteligência do indivíduo. Partindo de casos cotidianos, o autor mostra como a incapacidade de lidar com as próprias emoções pode minar a experiência escolar, acabar com carreiras promissoras e destruir vidas. O fracasso e a vitória não são determinados por algum tipo de loteria genética: muitos dos circuitos cerebrais da mente humana são maleáveis e podem ser trabalhados. Utilizando exemplos marcantes, Goleman descreve as cinco habilidades-chave da inteligência emocional e mostra como elas determinam nosso êxito nos relacionamentos e no trabalho, e até nosso bem-estar físico. Pais, professores e líderes do mundo dos negócios sentirão o valor desta visão arrebatadora do potencial humano."
+  },
+
+  {
+    "position": "7",
+    "titulo": "O homem que confundiu sua mulher com um chapéu",
+    "rosto": "../assets/imagens/pscologia7.jpg",
+    "autor":"Oliver Sacks",
+    "descricao":"O cientista e neurologista Oliver Sacks é também um excelente narrador, dono do raro poder de compartilhar com o leitor leigo certos mundos que de outro modo permaneceriam desconhecidos ou restritos aos especialistas. Em O homem que confundiu sua mulher com um chapéu estamos diante de pacientes que, imersos num mundo de sonhos e deficiências cerebrais, preservam sua imaginação e constroem uma identidade moral própria. Aqui, relatos clínicos são intencionalmente transformados em artefatos literários, mostrando que somente a forma narrativa restitui à abstração da doença uma feição humana, desvelando novas realidades para a investigação científica e problematizando os limites entre o físico e o psíquico."
+  },
+
+  {
+    "position": "8",
+    "titulo":"História da psicologia moderna",
+    "rosto": "../assets/imagens/pscologia8.jpg",
+    "autor":"Duane Schultz",
+    "descricao":"O tema central deste livro é a história da psicologia moderna, mais especificamente o período que se inicia no fim do século XIX, quando a psicologia torna-se uma disciplina separada e independente. Apesar de recapitular, de forma resumida, os pensamentos filosóficos anteriores, o livro concentra-se nas questões relacionadas ao estabelecimento da psicologia como um novo e distinto campo de estudo. Entre as novidades desta edição estão a revisão dos tópicos de movimentos mais recentes na psicologia; novos tópicos em psicologia cognitiva, incluindo cognição construída, neurociência cognitiva, neuroprotética, psicologia evolucionária, personalidade e inteligência nos animais, inteligência artificial e cognição inconsciente; evoluções atuais na psicologia positivista; e as contribuições de Charles Darwin."
+  },
+
+  {
+    "position": "9",
+    "titulo": "Gestalt-terapia",
+    "rosto": "../assets/imagens/pscologia9.jpg",
+    "autor":"Ralph Hefferline",
+    "descricao":"Esta obra é considerada a pedra angular da Gestalt-terapia. Aguardada ansiosamente pela comunidade gestáltica no Brasil, foi publicada pela primeira vez em 1951 e reeditada em 1994 para resgatar os fundamentos teóricos sobre os quais se estrutura a Gestalt-terapia. São apresentados os conceitos básicos elaborados por Perls, Hefferline e Goodman que deram origem a toda a literatura posterior e nortearam as técnicas utilizadas na prática gestáltica."
+  },
+
+  {
+    "position": "10",
+    "titulo": "Ser e Tempo",
+    "rosto": "../assets/imagens/pscologia10.jpg",
+    "autor":"Martin Heidegger ",
+    "descricao":"Este volume oferece, em edição bilíngue (alemão-português), a Primeira Parte incompleta de um tratado concebido para abranger duas grandes partes. Esse texto, denominado Ser e tempo, é amplamente considerado a contribuição maior daquele que muitos têm como o principal filósofo do século XX. Fausto Castilho - que frequentou o curso de Heidegger na Universidade de Friburgo, transformado no livro Que significa pensar?, e o seminário de Eugen Fink sobre a Monadologia de Leibniz - é o responsável por essa tradução que constitui um marco na história da recepção desta obra no Brasil."
+  }
+
+]

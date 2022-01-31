@@ -1,79 +1,79 @@
 [
   {
-    "titulo": " O Primeiro Ano ",
-    "subtitulo": "Como se faz um advogado ",
+    "position": "1",
+    "titulo": " O Primeiro Ano! Como se faz um advogado",
     "rosto": "../assets/imagens/direito.jpg",
     "autor":"Scott Turow",
     "descricao":" Nessa obra, Scott Turow compartilha as experiências de um estudante do primeiro ano da famosa Faculdade de Direito de Harvard, considerada uma das mais prestigiadas instituições do mundo jurídico. O livro retrata as principais dúvidas do estudante e como é a sua preparação durante o primeiro ano do curso. Trata-se de um retrato bem detalhado do ambiente competitivo das faculdades de Direito norte-americanas de primeira linha."
   },
 
   {
+    "position": "2",
     "titulo": " O caso dos exploradores de cavernas ",
-    "subtitulo": "O caso dos exploradores de cavernas ",
     "rosto": "../assets/imagens/direito2.jpg",
     "autor":"Lon L. Fuller",
     "descricao":" Esse é um dos livros de Direito mais divulgados entre os acadêmicos e que permite ao leitor conhecer melhor a área. O texto escrito pelo jurista e professor Lon L. Fuller, que é formado em Economia e em Direito, virou um clássico. Por meio dessa obra, publicada originalmente na revista da Faculdade de Direito de Harvard, o autor busca promover um debate moral sobre a situação vivida pelos personagens centrais (sobreviventes de um grave acidente em uma caverna)."
   },
 
   {
+    "position": "3",
     "titulo": " Teoria do Ordenamento Jurídico ",
-    "subtitulo": "Teoria do Ordenamento Jurídico ",
     "rosto": "../assets/imagens/direito3.jpg",
     "autor":" Ari Marcelo Solon",
     "descricao":" A Teoria do Ordenamento Jurídico é uma das mais importantes obras do debate jurídico. Tanto no Brasil como no mundo. Noberto Bobbio é considerado um dos mais respeitados jusfilósofos da atualidade. Para o Professor Celso Lafer. A Filosofia do Direito de Bobbio, como uma filosofia do Direito subspecie juris, é uma admirável expressão da razão jurídica, voltada para esclarecer as operações intelectuais e práticas na criação do Direito e na sua aplicação. É nesse campo que Bobbio se move, é desse modo que se pode situar a Teoria de Ordenamento e realçar sua importância. "
   },
 
   {
+    "position": "4",
     "titulo": "Da República ",
-    "subtitulo": "Da República ",
     "rosto": "../assets/imagens/direito4.jpg",
     "autor":"Marco Tulio Cícero",
     "descricao":" Em uma república capaz de conquistar e construir um império gigantesco, um dos maiores filósofos romanos de todos os tempos, Marco Túlio Cícero, (106-43 a.C.) – orador, escritor, advogado e político – descreve diálogos que exaltam a ética, a justiça e a boa-fé. Nesta obra clássica do pensamento da humanidade, que influenciou o Direito e os sistemas de governo, o leitor encontrará lições tanto jurídicas quanto políticas de que o interesse particular de cada um deve estar subordinado ao interesse superior do conjunto. Elaborada à moda dos diálogos platônicos, Da República é fundamental para a compreensão da doutrina política que influenciou a organização dos Estados, como o brasileiro que segue o Direito Romano. A República, conceituada por Cipião, o Africano, como a reunião que tem seu fundamento no consentimento jurídico e na utilidade comum, era, para Cícero, idêntico não ao governo popular, mas ao constitucionalismo, o que implica os governantes ficarem sujeitos às mesmas leis que os governados."
   },
 
   {
+    "position": "5",
     "titulo": " A República ",
-    "subtitulo": "A República ",
     "rosto": "../assets/imagens/direito5.jpg",
     "autor":"Platão",
     "descricao":" A República (ou Da Justiça) é a obra mais traduzida, difundida, influente e estudada de Platão. Consagrada como um dos mais expressivos escritos de filosofia de todos os tempos, teve seu texto estabelecido por diversos helenistas ilustres. A presente tradução a partir do grego baseia-se no de Hermann, da Teubner. Esta obra aborda diversos temas fundamentados, centrados e subordinados à questão primordial “o que é a justiça?” e seus desdobramentos: “qual é a sua natureza?” e “do que é ela constituída?”. Platão expõe sua concepção de um Estado soberano (comunista) cuja forma de governo permitiria que a ideia de justiça fosse aplicável, realizável e realizada. Esta edição inclui a numeração referencial de Stephanus localizada às margens do texto, um histórico de toda a obra de Platão, dados biográficos, cronologia e uma sinopse com os principais temas detalhados ao longo da obra. O presente volume inclui a numeração da edição referencial de Stephanus, de 1578, impressa às margens do texto. "
   },
 
   {
+    "position": "6",
     "titulo": " Constituição Federal - 2020",
-    "subtitulo": "Constituição Federal - 2020",
     "rosto": "../assets/imagens/direito6.jpg",
     "autor":" Jair Lot Vieira",
     "descricao":"Atualizada até o DOU de 10 de julho de 2020, esta 29ª edição da Constituição da República Federativa do Brasil inclui o Decreto Legislativo nº 6/2020, que reconhece a ocorrência do estado de calamidade pública no país, em decorrência da Pandemia do COVID-19, e as Emendas Constitucionais mais recentes: EC nº 106, de 7 de maio de 2020 – “Orçamento de Guerra” (Pandemia COVID-19); e EC nº 107, de 2 de julho de 2020 – Adiamento das Eleições Municipais 2020 e dos Prazos Eleitorais. Anotada com remissões à legislação reguladora, esta obra inclui ainda: Emendas Constitucionais na íntegra; Convenção sobre os Direitos das Pessoas com Deficiência; Tratado de Marraqueche; Índice remissivo."
   },
 
   {
+    "position": "7",
     "titulo": " Direito Penal ",
-    "subtitulo": "Direito Penal ",
     "rosto": "../assets/imagens/direito7.jpg",
     "autor":" David Medina da Silva",
     "descricao":" Direito Penal é uma obra atualizada, contendo praticamente todo o conteúdo do Direito Penal de forma condensada e didática. Além dos assuntos consagrados da parte geral, parte especial e os principais crimes da legislação extravagante, a obra aprofunda os temas mais importantes e apresenta novas abordagens, como a teoria do dolo sem vontade, os crimes culturalmente motivados e outras questões relevantes e atuais. Trata-se de uma obra escrita para auxiliar estudantes e profissionais a se manterem atualizados e a obterem informações precisas e claras, com a velocidade exigida dos tempos atuais, indo direto ao ponto, sem esquecer dos aspectos propedêuticos do Direito Penal, tão caros aos estudantes dos cursos universitários e de especialização. Embora este seja um livro eminentemente técnico, a pintura de capa, intitulada A morte de Sócrates, do artista francês Jacques-Louis David, adverte para a importância do Estudo do Direito Penal também em sua forma filosófica, pois o pensamento crítico constitui, desde tempos imemoriais, uma das principais forças de evolução do Direito e nos lembra que o saber se constrói com a humildade postulada pelos ideais sociocráticos."
   },
 
   {
-    "titulo": "O Positivismo Jurídico",
-    "subtitulo": "Lições de Filosofia do Direito",
+    "position": "8",
+    "titulo": "O Positivismo Jurídico! Lições de Filosofia do Direito",
     "rosto": "../assets/imagens/direito10.jpg",
     "autor":"Norberto Bobbio ",
     "descricao":"A reedição desta obra reproduz a compilação histórica das lições ministradas por Norberto Bobbio em suas aulas de Positivismo Jurídico, que foram concebidas como comentário histórico e como síntese teórica dos cursos precedentes Teoria da Norma Jurídica e Teoria do Ordenamento Jurídico. Estas lições foram compiladas pelo doutor Nello Morra para o ensino universitário da Filosofia do Direito e da Teoria geral do Direito, e constituem um rico instrumento de formação dos estudantes de Direito, dada a permanência imutável dos pilares fundamentais que sustentam o debate sobre o positivismo jurídico. Nas palavras do jurista italiano Francesco DAgostino: O Positivismo Jurídico merece ser reeditado porque é um clássico. E o é porque neste livro ressaltam do modo mais pleno os dotes que fizeram de Norberto Bobbio um mestre da ciência jurídica italiana: a linearidade da linha argumentativa, a fineza do juízo crítico, o tom cristalino da exposição.Mas o é sobretudo porque neste livro se explicitam do modo mais nítido as razões pelas quais o positivismo se tornou o paradigma de pensamento jurídico compartilhado por tantos juristas... neste livro não se deve mais buscar a mera dimensão da informação, mas a capacidade de formação intelectual e moral que só poucos e raros mestres são capazes de ofertar aos seus alunos. "
   },
 
   {
+    "position": "9",
     "titulo": "O júri",
-    "subtitulo": "O júri",
     "rosto": "../assets/imagens/direito8.jpg",
     "autor":"Lon L. Fuller",
     "descricao":" Esse é um dos livros de Direito mais divulgados entre os acadêmicos e que permite ao leitor conhecer melhor a área. O texto escrito pelo jurista e professor Lon L. Fuller, que é formado em Economia e em Direito, virou um clássico. Por meio dessa obra, publicada originalmente na revista da Faculdade de Direito de Harvard, o autor busca promover um debate moral sobre a situação vivida pelos personagens centrais (sobreviventes de um grave acidente em uma caverna)."
   },
 
   {
+    "position": "10",
     "titulo": " A promessa / A pane ",
-    "subtitulo": "A promessa / A pane ",
     "rosto": "../assets/imagens/direito9.jpg",
     "autor":" Friedrich Dürrenmatt",
     "descricao":" Em A PROMESSA, que leva o subtítulo Réquiem para um romance policial, o autor, já conhecido por seus romances e roteiros policiais, decide jogar com as convenções do gênero. Dürrenmatt coloca a si mesmo como personagem ― um escritor que ouve de um ex-chefe de polícia o caso que arruinou o homem mais genial que ele conheceu. Matthäi, um detetive já próximo da aposentadoria, jura à família de uma vítima que encontrará o culpado por trás do crime brutal. Ao levar sua promessa às últimas consequências, Matthäi é obrigado a encarar o fato de que a vida real nem sempre cabe dentro da lógica das histórias de mistério. A saga de Matthäi se converte em uma reflexão sobre justiça, culpa, virtude e acaso. Além disso, ao misturar ficção e realidade, o autor coloca a discussão sobre literatura dentro da própria obra. Em A PANE: Uma história ainda possível, o caixeiro-viajante Alfredo Traps tem de pernoitar em um vilarejo após seu carro sofrer uma pane na estrada. Ele se une a um grupo para um jantar. Os ilustres senhores que o convidaram têm o passatempo de encenar julgamentos e sentenças. Na posição de réu, Traps abrirá sua vida e seus segredos a estes desconhecidos de uma maneira irreversível. Nas duas obras, o autor cria pérolas narrativas: leituras envolventes que incluem mergulhos fundos na moralidade humana e reflexões sobre o lugar da literatura no mundo contemporâneo. Por sua versatilidade e suas ideias provocadoras e críticas à sociedade europeia, Dürrenmatt marcou seu nome entre os principais autores de língua alemã da literatura moderna."
