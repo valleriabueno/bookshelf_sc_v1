@@ -2,10 +2,9 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { HotToastService } from '@ngneat/hot-toast';
 import { catchError, Observable, of } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
-import{HotToastService} from '@ngneat/hot-toast';
-import { observable } from 'rxjs';
+import { delay, map, shareReplay } from 'rxjs/operators';
 
 import { AppLoginComponent } from './../app-login/app-login.component';
 import { MenuNavegador } from './../modelosInterface/menuNavegador';
@@ -19,7 +18,7 @@ import { NavegacaoService } from './../servicosInterface/navegacao.service';
 })
 export class NavegacaoComponent {
   usuario$ = this.autenticacaoFirebaseService.usuarioLogado$;
-  //Itens co menu principal.
+  //Itens do menu principal.
   logoMenu='../../assets/imagens/logoBS4.png';
   //Itens de icones e imagens de navegação.
   iconeGeral='../../assets/imagens/ShelfBook.png';
@@ -55,10 +54,18 @@ export class NavegacaoComponent {
     }
 
     sairUsuario(){
-      this.autenticacaoFirebaseService.sairLogin().subscribe(() =>{
+      this.autenticacaoFirebaseService.sairLogin()
+      .pipe(
+        delay(200),
+        this.toast.observe({
+          success: 'Logout realizado com sucesso.',
+          loading: 'Saindo...',
+          error: 'Algo deu errado, você continua logado.'
+        })
+      ).subscribe(() =>{
         this.rotas.navigate(['']
         )
-       
-        })
+
+      })
     }
 }
