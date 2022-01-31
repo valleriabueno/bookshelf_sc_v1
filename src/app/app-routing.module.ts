@@ -1,3 +1,4 @@
+import { DireitoComponent } from './direito/direito.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { FeedComponent } from './feed/feed.component';
 import { NgModule } from '@angular/core';
@@ -15,6 +16,10 @@ const routes: Routes = [
   },
   {
     path: 'feed', component: FeedComponent,
+    ...canActivate(enviarSemLogin)
+  },
+  {
+    path: 'direito', component: DireitoComponent,
     ...canActivate(enviarSemLogin)
   },
   {
