@@ -3,8 +3,13 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
-
+import { GoogleAuthProvider, getAuth, signInWithRedirect } from "firebase/auth";
+import { environment } from 'src/environments/environment';
+import { initializeApp } from 'firebase/app';
 import { AutenticacaoFirebaseService } from './../servicosInterface/autenticacao-firebase.service';
+
+
+const app = initializeApp(environment['firebase']);
 
 @Component({
   selector: 'app-app-login',
@@ -52,5 +57,16 @@ export class AppLoginComponent {
         //Ao direcionar para a rota, feche o diálogo.
         this.telaLogin.closeAll();
       })
+  }
+
+  onLoginWithGoogle() {
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth();
+    provider.addScope('https://www.googleapis.com/auth/userinfo.email');
+    provider.addScope('https://www.googleapis.com/auth/userinfo.profile');
+    provider.setCustomParameters({
+      prompt: 'select_account'
+    });
+    signInWithRedirect(auth, provider);
   }
 }
