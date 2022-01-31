@@ -4,7 +4,15 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
 
+import { initializeApp } from 'firebase/app';
+
 import { AutenticacaoFirebaseService } from './../servicosInterface/autenticacao-firebase.service';
+
+import { GoogleAuthProvider, getAuth, signInWithRedirect } from "firebase/auth";
+
+import { environment } from 'src/environments/environment';
+
+const app = initializeApp(environment['firebase']);
 
 @Component({
   selector: 'app-app-login',
@@ -49,5 +57,16 @@ export class AppLoginComponent {
       ).subscribe(()=>{
         this.rotas.navigate(['/cdd'])
       })
-  }
+    }
+
+    onLoginWithGoogle() {
+      const provider = new GoogleAuthProvider();
+      const auth = getAuth();
+      provider.addScope('https://www.googleapis.com/auth/userinfo.email');
+      provider.addScope('https://www.googleapis.com/auth/userinfo.profile');
+      provider.setCustomParameters({
+        prompt: 'select_account'
+      });
+      signInWithRedirect(auth, provider);
+    }
 }
