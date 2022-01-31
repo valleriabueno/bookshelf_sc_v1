@@ -40,15 +40,14 @@ export class AppCadastroComponent implements OnInit {
     img: new FormControl('', Validators.required),
   }, { validators: passwordMatchValidator() });
 
+  mensagemErro?: string;
+
   constructor(
     private loginBuilder: FormBuilder,
     private autenticacaoFirebaseService: AutenticacaoFirebaseService,
     private toast: HotToastService,
     private rotas: Router,
-
-
   ) { }
-
 
   get nome() {
     return this.formularioCadastro.get('nome')
@@ -69,9 +68,6 @@ export class AppCadastroComponent implements OnInit {
     return this.formularioCadastro.get('img')
   }
 
- 
-
-
   enviaCadastro() {
     if (!this.formularioCadastro.valid) {
       return;
@@ -83,7 +79,25 @@ export class AppCadastroComponent implements OnInit {
         this.toast.observe({
           success: 'Cadatro executado, bem vindo ao BookShelf',
           loading: 'Enviando informações...',
-          error: ({ message }) => `Houve um problema: #BS${message}`,
+          error: ({ message }) => {
+            console.log(message);
+            switch (message) {
+              case 'Firebase: Password should be at least 6 characters (auth/weak-password).':
+                this.mensagemErro =
+                  'Sua senha precise ter no mínimo 6 caracteres!';
+                break;
+              case 'Firebase: Error (auth/invalid-email).':
+                this.mensagemErro = 'Endereço de E-mail inválido!';
+                break;
+              case 'Firebase: Error (auth/email-already-in-use).':
+                this.mensagemErro = 'Endereço de E-mail já está em uso!'
+                break
+              default:
+                this.mensagemErro = `Algo deu errado: #${message}`
+                break
+            }
+            return `${this.mensagemErro}`;
+          },
         })
       ).subscribe(() => {
         this.rotas.navigate(['/'])
