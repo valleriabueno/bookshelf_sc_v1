@@ -1,5 +1,5 @@
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
@@ -37,14 +37,18 @@ export class AppCadastroComponent implements OnInit {
     email: new FormControl('', [Validators.required, Validators.email]),
     senha: new FormControl('', Validators.required),
     confirmaSenha: new FormControl('', Validators.required),
+    img: new FormControl('', Validators.required),
   }, { validators: passwordMatchValidator() });
 
   constructor(
     private loginBuilder: FormBuilder,
     private autenticacaoFirebaseService: AutenticacaoFirebaseService,
     private toast: HotToastService,
-    private rotas: Router
+    private rotas: Router,
+
+
   ) { }
+
 
   get nome() {
     return this.formularioCadastro.get('nome')
@@ -61,14 +65,20 @@ export class AppCadastroComponent implements OnInit {
   get confirmaSenha() {
     return this.formularioCadastro.get('confirmaSenha')
   }
+  get img() {
+    return this.formularioCadastro.get('img')
+  }
+
+ 
+
 
   enviaCadastro() {
     if (!this.formularioCadastro.valid) {
       return;
     }
-    const { nome, email, senha } = this.formularioCadastro.value;
+    const { nome, email, senha, img } = this.formularioCadastro.value;
     this.autenticacaoFirebaseService
-      .cadastrarUsuario(nome, email, senha)
+      .cadastrarUsuario(nome, email, senha, )
       .pipe(
         this.toast.observe({
           success: 'Cadatro executado, bem vindo ao BookShelf',
