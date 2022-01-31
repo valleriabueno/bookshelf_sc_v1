@@ -3,5 +3,7 @@ export interface Critica {
   subtitulo: string,
   autor: string,
   capa: string,
-  critica: [string]
+  critica: [string],
+  fonte: string,
+  banner: string
 }

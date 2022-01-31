@@ -1,6 +1,8 @@
 [
   {
     "titulo": "A Guerra Dos Tronos – As Crônicas De Gelo E Fogo",
+    "banner": "https://www.planocritico.com/wp-content/uploads/hou.jpg",
+    "fonte": "https://www.planocritico.com/literatura-a-guerra-dos-tronos-as-cronicas-de-gelo-e-fogo-v-1/",
     "subtitulo": "Uma aventura espetacular pelo reino de Westeros.",
     "autor": "George R.R. Martin",
     "capa": "https://images-na.ssl-images-amazon.com/images/I/91+1SUO3vUL.jpg",
@@ -20,7 +22,9 @@
   },
   {
     "titulo": "Harry Potter e o Enigma do Príncipe",
+    "banner": "https://www.planocritico.com/wp-content/uploads/2017/07/08-Enigma-do-Principe.jpg",
     "subtitulo": "A mágica aventura de Harry e seus amigos se aproxima do fim.",
+    "fonte": "https://www.planocritico.com/critica-harry-potter-e-o-enigma-do-principe-de-j-k-rowling/",
     "autor": "J.K. Rowling",
     "capa": "https://images-na.ssl-images-amazon.com/images/I/81-jvnt+hgL.jpg",
     "critica": [
@@ -34,7 +38,9 @@
     ]
   },
   {
-    "titulo": "Sherlock Holmes: O Sígno Dos Quatro",
+    "titulo": "Sherlock Holmes: O Signo Dos Quatro",
+    "banner": "https://www.planocritico.com/wp-content/uploads/2022/01/o-signo-dos-quatro-shrlock-holmes-plano-critico.jpg",
+    "fonte": "https://www.planocritico.com/critica-sherlock-holmes-o-signo-dos-quatro-de-arthur-conan-doyle/",
     "subtitulo": "Mais um mistério do grande Detetive.",
     "autor": "Arthur Conan Doyle",
     "capa": "https://images-na.ssl-images-amazon.com/images/I/71NPqlQ9-NL.jpg",

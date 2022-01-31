@@ -1,6 +1,31 @@
 * {
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  .busca {
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+    width: 100%;
+    mat-form-field {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 80%;
+    }
+  }
+}
+
+.close {
+  align-self: flex-start;
+}
+
+.voltar {
+  margin-left: 10px;
+}
+
 .capa {
   height: 300px;
   width: 200px;
@@ -23,4 +48,8 @@ mat-card-content {
   button{
     justify-self: end;
   }
+}
+
+.mat-card-header {
+  justify-content: space-between;
 }

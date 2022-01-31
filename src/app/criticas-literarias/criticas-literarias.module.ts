@@ -6,6 +6,8 @@ import { CriticasComponent } from './criticas/criticas.component';
 import { AppMaterialModule } from '../app-compartilhado/app-material/app-material.module';
 import { AppCompartilhadoModule } from '../app-compartilhado/app-compartilhado.module';
 import { LerMaisComponent } from './ler-mais/ler-mais.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { LerMaisComponent } from './ler-mais/ler-mais.component';
     CommonModule,
     CriticasLiterariasRoutingModule,
     AppMaterialModule,
-    AppCompartilhadoModule
+    AppCompartilhadoModule,
+    FormsModule
   ]
 })
 export class CriticasLiterariasModule { }
