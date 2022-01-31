@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 export class DireitoComponent implements OnInit {
 
   livrosDireito$: Observable <Direito[]>;
-  visaoColunas=['rosto', 'titulo', 'autor'];
+  visaoColunas=['position', 'rosto', 'titulo', 'autor'];
 
   constructor(
     private direitoService: DireitoService,

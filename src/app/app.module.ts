@@ -31,6 +31,7 @@ import { FeedComponent } from './feed/feed.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { DireitoComponent } from './direito/direito.component';
+import { PsicologiaComponent } from './psicologia/psicologia.component';
 
 
 
@@ -42,6 +43,7 @@ import { DireitoComponent } from './direito/direito.component';
     AppLoginComponent,
     AppCadastroComponent,
     DireitoComponent,
+    PsicologiaComponent,
 
 
   ],
