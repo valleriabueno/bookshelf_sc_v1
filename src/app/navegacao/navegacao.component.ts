@@ -4,6 +4,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { catchError, Observable, of } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import{HotToastService} from '@ngneat/hot-toast';
+import { observable } from 'rxjs';
 
 import { AppLoginComponent } from './../app-login/app-login.component';
 import { MenuNavegador } from './../modelosInterface/menuNavegador';
@@ -34,6 +36,7 @@ export class NavegacaoComponent {
     private breakpointObserver: BreakpointObserver,
     private telaLogin: MatDialog,
     private rotas: Router,
+    private toast: HotToastService,
     private autenticacaoFirebaseService: AutenticacaoFirebaseService,
     private navegadorService: NavegacaoService
     ) {
@@ -53,7 +56,9 @@ export class NavegacaoComponent {
 
     sairUsuario(){
       this.autenticacaoFirebaseService.sairLogin().subscribe(() =>{
-        this.rotas.navigate([''])
-      })
+        this.rotas.navigate(['']
+        )
+       
+        })
     }
 }

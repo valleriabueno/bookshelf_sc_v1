@@ -47,8 +47,19 @@
           </mat-form-field>
           <div>
             <button mat-button matStepperPrevious type="button">Back</button>
-            <button mat-button color="accent" type="submit">Cadastrar</button>
+            <button mat-button matStepperNext type="button">Next</button>
           </div>
+          <mat-step #step5 errorMessage="Este campo é obrigatório!" [hasError]="img?.errors?.['required'] && step5.interacted">
+            <ng-template matStepLabel>Carregar Imagem</ng-template>
+            <mat-form-field>
+              <input matInput placeholder="Escolher imagem" formControlName="img">
+              <mat-error *ngIf="img?.errors?.['required']">Erro ao carregar imagem.</mat-error>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious type="button">Back</button>
+              <button mat-button color="accent" type="submit">Cadastrar</button>
+            </div>
+          </mat-step>
         </mat-step>
       </mat-stepper>
     </form>
