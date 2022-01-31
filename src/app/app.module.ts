@@ -30,6 +30,9 @@ import { AppComponent } from './app.component';
 import { FeedComponent } from './feed/feed.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
+import { DireitoComponent } from './direito/direito.component';
+
+
 
 @NgModule({
   declarations: [
@@ -38,6 +41,9 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
     FeedComponent,
     AppLoginComponent,
     AppCadastroComponent,
+    DireitoComponent,
+
+
   ],
   imports: [
     BrowserModule,

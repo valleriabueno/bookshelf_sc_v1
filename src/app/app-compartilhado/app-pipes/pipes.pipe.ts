@@ -20,5 +20,7 @@ export class PipesPipepe implements PipeTransform {
       case '9': return 'school';
     }
     return 'biotech';
-  }
+  };
+
+  
 }
