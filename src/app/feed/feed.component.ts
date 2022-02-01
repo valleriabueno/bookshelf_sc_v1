@@ -1,3 +1,5 @@
+import { MatDialog } from '@angular/material/dialog';
+import { AppDialogosComponent } from './../app-compartilhado/app-dialogos/app-dialogos.component';
 import { AutenticacaoFirebaseService } from './../servicosInterface/autenticacao-firebase.service';
 import { DashboardService } from './../servicosInterface/dashboard.service';
 import { Dashboard } from './../modelosInterface/dashboard';
@@ -26,13 +28,20 @@ export class FeedComponent {
   constructor(
     private breakpointObserver: BreakpointObserver,
     private dashboardService: DashboardService,
-    private autenticacaoFirebaseService: AutenticacaoFirebaseService
+    private autenticacaoFirebaseService: AutenticacaoFirebaseService,
+    public dialogo: MatDialog
     ) {
       this.cards$ = dashboardService.listagemCards()
       .pipe(
         catchError(error =>{
+          this.abrirDialogoErro("Erro ao carregar a tabela: #BS -"+error.status)
           return of([])
         })
       )
+    }
+    abrirDialogoErro(erroMsg: string) {
+      this.dialogo.open(AppDialogosComponent, {
+        data: erroMsg
+      })
     }
 }
