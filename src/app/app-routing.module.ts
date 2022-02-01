@@ -1,4 +1,3 @@
-import { Empreendedorismo } from './modelosInterface/empreendedorismo';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { TecnologiaComponent } from './tecnologia/tecnologia.component';
 import { DireitoComponent } from './direito/direito.component';
@@ -8,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { canActivate, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
 import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
+import { SugestoesComponent } from './sugestoes/sugestoes.component';
 
 const enviarSemLogin = () => redirectUnauthorizedTo(['/app-app-cadastro']);
 
@@ -28,6 +28,10 @@ const routes: Routes = [
   },
   {
     path: 'psicologia', component: PsicologiaComponent,
+    ...canActivate(enviarSemLogin)
+  },
+  {
+    path: 'sugestoes', component: SugestoesComponent,
     ...canActivate(enviarSemLogin)
   },
   {

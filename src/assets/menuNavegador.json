@@ -2,6 +2,7 @@
   {"linkMenu": "/cdd", "labelMenu":"Classes Dewey", "hab": true},
   {"linkMenu": "/feed", "labelMenu":"Feed Notícias", "hab": true},
   {"linkMenu": "/criticas", "labelMenu": "Críticas", "hab": true},
+  {"linkMenu": "/sugestoes", "labelMenu":"Sugestões", "hab": true},
   {"linkMenu": "/direito", "labelMenu":"Livros de Direito", "hab": true},
   {"linkMenu": "/psicologia", "labelMenu":"Livros de Psicologia", "hab": true},
   {"linkMenu": "/tecnologia", "labelMenu":"Livros de Tecnologia", "hab": true},
