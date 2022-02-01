@@ -10,7 +10,7 @@
       <form [formGroup]="formularioLogin" (ngSubmit)="loginFirebase()">
         <mat-form-field>
           <input matInput placeholder="Email de Login" formControlName="email">
-          
+
           <mat-error *ngIf="email?.errors?.['required']">Será necessário informar um e-mail</mat-error>
 
           <mat-error *ngIf="email?.errors?.['email']">O formato do e-mail não é valido</mat-error>
@@ -19,6 +19,10 @@
           <input matInput placeholder="Entre coma senha" formControlName="senha" type="password">
           <mat-error *ngIf="senha?.errors?.['required']">Esqueceu a senha</mat-error>
         </mat-form-field>
+         <!--RECAPTCHA-->
+         <mat-card-footer>
+          <re-captcha id="recaptcha" name="recaptcha" #recaptcha="ngModel" [(ngModel)]="token" required [class.is-invalid]="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)"></re-captcha>
+        </mat-card-footer>
         <mat-card-footer>
           <button mat-raised-button color="accent" type="submit">Entrar</button>
           <button mat-raised-button mat-dialog-close color="primary">Fechar</button>

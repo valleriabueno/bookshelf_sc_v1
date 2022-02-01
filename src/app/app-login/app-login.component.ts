@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, NgForm, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
@@ -16,6 +16,9 @@ const app = initializeApp(environment['firebase']);
   styleUrls: ['./app-login.component.scss'],
 })
 export class AppLoginComponent {
+
+  token: string|undefined; // RECAPTCHA
+
   formularioLogin = this.loginBuilder.group({
     email: new FormControl('', [Validators.required, Validators.email]),
     senha: new FormControl('', Validators.required),
@@ -32,7 +35,9 @@ export class AppLoginComponent {
     private toast: HotToastService,
     private rotas: Router,
     private autenticacaoFirebaseService: AutenticacaoFirebaseService
-  ) {}
+  ) {
+    this.token = undefined // RECAPTCHA
+  }
 
   get email() {
     return this.formularioLogin.get('email');
@@ -41,10 +46,16 @@ export class AppLoginComponent {
   get senha() {
     return this.formularioLogin.get('senha');
   }
+
   loginFirebase() {
     if (!this.formularioLogin.valid) {
       return;
     }
+      /* Verificar reCaptcha */
+      else if(!grecaptcha.getResponse().length) {
+        this.toast.error('Clique em "Não sou um robô"');
+        return;
+      }
     const { email, senha } = this.formularioLogin.value;
     this.autenticacaoFirebaseService
       .loginUsuario(email, senha)
@@ -88,4 +99,16 @@ export class AppLoginComponent {
     });
     signInWithRedirect(auth, provider);
   }
+
+  // RECAPTCHA
+  public send(form: NgForm): void {
+    if (form.invalid) {
+      for (const control of Object.keys(form.controls)) {
+        form.controls[control].markAsTouched();
+      }
+      return;
+    }
+    console.log(`Token [${this.token}] generated`);
+  }
+
 }
