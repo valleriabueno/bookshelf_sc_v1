@@ -8,7 +8,7 @@
         </mat-option>
       </mat-autocomplete>
     </mat-form-field>
-    <button (click)="buscaCritica(criticas)" type="submit" mat-raised-button color="accent">
+    <button (click)="buscaCritica(criticas)" type="submit" mat-raised-button color="accent" matTooltip="Menu" matTooltipClass="tooltip">
       <span class="material-icons">
         search
       </span>
@@ -16,7 +16,7 @@
   </div>
 
   <div *ngIf="resultado">
-    <button (click)="voltar()" mat-raised-button color="accent" class="voltar">
+    <button (click)="voltar()" mat-raised-button color="accent" class="voltar" matTooltip="Voltar" matTooltipClass="tooltip">
       <mat-icon>arrow_back</mat-icon>
     </button>
     <mat-card class="resultado">
@@ -35,7 +35,7 @@
             <a href={{resultado.fonte}} target="_blank">{{resultado.fonte}}</a>
           </p>
           <button (click)="abrirLerMais(resultado.critica, resultado.titulo, resultado.autor, resultado.fonte, resultado.banner)" mat-raised-button
-            color="accent" class="ler-mais">
+            color="accent" class="ler-mais" matTooltip="Ler Mais" matTooltipClass="tooltip" matTooltipPosition="right">
             <mat-icon>menu_book</mat-icon>
           </button>
         </div>
@@ -62,7 +62,7 @@
               <a href={{critica.fonte}} target="_blank">{{critica.fonte}}</a>
             </p>
             <button (click)="abrirLerMais(critica.critica, critica.titulo, critica.autor, critica.fonte, critica.banner)" mat-raised-button
-              color="accent" class="ler-mais">
+              color="accent" class="ler-mais" matTooltip="Ler Mais" matTooltipClass="tooltip" matTooltipPosition="right">
               <mat-icon>menu_book</mat-icon>
             </button>
           </div>

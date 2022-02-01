@@ -1,5 +1,5 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
@@ -14,7 +14,8 @@ import { NavegacaoService } from './../servicosInterface/navegacao.service';
 @Component({
   selector: 'app-navegacao',
   templateUrl: './navegacao.component.html',
-  styleUrls: ['./navegacao.component.scss']
+  styleUrls: ['./navegacao.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class NavegacaoComponent {
   usuario$ = this.autenticacaoFirebaseService.usuarioLogado$;
