@@ -1,7 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <img mat-card-image [src]="logoMenu" alt="Imagem do logo no menu">
+     <img mat-card-image [src]="logoMenu" alt="Imagem do logo no menu">
     <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
       <a mat-list-item *ngIf="itemMenu.hab === true" [href]="itemMenu.linkMenu">{{itemMenu.labelMenu}}</a>
     </mat-nav-list>
@@ -12,7 +12,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Menu BookShelf Lateral">menu</mat-icon>
       </button>
-      <img mat-card-sm-image [width]="lIcone" [height]="aIcone" [src]="iconeGeral">
+
+     <a routerLink="/app-app-cadastro"><img mat-card-sm-image [width]="lIcone" [height]="aIcone" [src]="iconeGeral"></a>
+
       <ng-container *ngIf="usuario$ | async as usuario; else botaoLogin">
         <button mat-raised-button color="primary" [matMenuTriggerFor]="usuarioMenu">
           <mat-icon class="mat-18">local_library</mat-icon>
