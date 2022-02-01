@@ -77,5 +77,11 @@ span.buttonText {
 
 mat-form-field{
   margin:20px;
-  
+
 }
+
+re-captcha.is-invalid > div {
+  border: 1px solid #dc3545 !important;
+  border-radius: 0.2rem;
+}
+

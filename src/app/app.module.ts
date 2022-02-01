@@ -32,6 +32,8 @@ import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { DireitoComponent } from './direito/direito.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
+import { FormsModule } from '@angular/forms';
+import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
 
 
 
@@ -66,6 +68,10 @@ import { PsicologiaComponent } from './psicologia/psicologia.component';
     MatSelectModule,
     MatRadioModule,
     ReactiveFormsModule,
+    FormsModule,
+    RecaptchaFormsModule,
+    RecaptchaModule,
+
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
@@ -73,7 +79,14 @@ import { PsicologiaComponent } from './psicologia/psicologia.component';
     provideStorage(() => getStorage()),
     HotToastModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: {
+        siteKey: environment.recaptcha.siteKey
+      } as RecaptchaSettings,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

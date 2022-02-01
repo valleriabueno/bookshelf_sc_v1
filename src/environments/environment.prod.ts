@@ -7,5 +7,11 @@ export const environment = {
     messagingSenderId: "1061418846372",
     appId: "1:1061418846372:web:ca45bc4610c7ecb447fe31"
   },
+
+  recaptcha: {
+    siteKey: '6Le66j4eAAAAALxKigZSNlDCD1jV-MFlVkLtH10I',
+  },
+
   production: true
+
 };
