@@ -36,6 +36,7 @@ import { TecnologiaComponent } from './tecnologia/tecnologia.component';
 
 import { FormsModule } from '@angular/forms';
 import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
+import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
 
 
 
@@ -49,6 +50,7 @@ import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSet
     DireitoComponent,
     PsicologiaComponent,
     TecnologiaComponent,
+    EmpreendedorismoComponent,
 
 
   ],
