@@ -6,7 +6,7 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getStorage, provideStorage } from '@angular/fire/storage';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -34,10 +34,10 @@ import { DireitoComponent } from './direito/direito.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { TecnologiaComponent } from './tecnologia/tecnologia.component';
 
-import { FormsModule } from '@angular/forms';
+
 import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
 import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
-
+import { SugestoesComponent } from './sugestoes/sugestoes.component';
 
 
 @NgModule({
@@ -51,6 +51,7 @@ import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.c
     PsicologiaComponent,
     TecnologiaComponent,
     EmpreendedorismoComponent,
+    SugestoesComponent
 
 
   ],

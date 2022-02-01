@@ -1,0 +1,19 @@
+<div class="grid-container">
+  <h1 class="mat-h1" *ngIf="usuario$ | async as usuario">Sugestões da Equipe Bookshelf</h1>
+  <mat-grid-list cols="1" rowHeight="350px">
+    <mat-grid-tile *ngFor="let card of cards$ | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{card.titulo}}</mat-card-title>
+        </mat-card-header>
+        <div class="sugestoes">
+          <img mat-card-xl-image [src]="card.img" [alt]="card.titulo">
+        <mat-card-content class="dashboard-card-content">
+          <div class="textoconteudo">{{card.conteudo}}</div>
+        </mat-card-content>
+        </div>
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
