@@ -1,0 +1,82 @@
+[
+  {
+    "position": "1",
+    "titulo": "Os Inovadores",
+    "rosto": "../assets/imagens/tecnologia1.jpg",
+    "autor":"Walter Isaacson",
+    "descricao":"Os Inovadores - Uma Biografia da Revolução Digital é um livro lançado em 2014, escrito por Walter Isaacson. O livro detalha a história da revolução digital através de várias pessoas que foram fundamentais na criação dos primeiros computadores e depois sistemas maiores, como a Internet."
+  },
+
+  {
+    "position": "2",
+    "titulo": "Elon Musk",
+    "rosto": "../assets/imagens/tecnologia2.jpg",
+    "autor":"Ashlee Vance",
+    "descricao":"Elon Musk: Como o CEO bilionário da SpaceX e da Tesla está moldando o nosso futuro, é a biografia de Elon Musk escrita por Ashlee Vance, publicada em 2015. O livro traça a vida de Elon Musk desde sua infância até o tempo que ele passou na Zip2 e Paypal, e depois na SpaceX, Tesla e SolarCity."
+  },
+
+  {
+    "position": "3",
+    "titulo": "Bad Blood: Fraude Bilionária no Vale do Silício",
+    "rosto": "../assets/imagens/tecnologia3.jpeg",
+    "autor":"John Carreyrou",
+    "descricao":"A história completa da ascensão meteórica ao chocante colapso da Theranos, uma startup multibilionária de biotecnologia, escrita por John Carreyrou, premiado jornalista que divulgou a história em primeira mão e perseguiu-a até o fim, apesar da pressão de sua carismática CEO e das ameaças de seus advogados"
+  },
+
+  {
+    "position": "4",
+    "titulo": "A Quarta Revolução Industrial",
+    "rosto": "../assets/imagens/tecnologia4.jpg",
+    "autor":"Klaus Martin Schwab",
+    "descricao":"A Quarta Revolução Industrial é diferente de tudo o que a humanidade já experimentou. Novas tecnologias estão fundindo os mundos físico, digital e biológico de forma a criar grandes promessas e possíveis perigos"
+  },
+
+  {
+    "position": "5",
+    "titulo": "De Zero a Um",
+    "rosto": "../assets/imagens/tecnologia5.jpg",
+    "autor":"Peter Thiel",
+    "descricao":"Para Peter Thiel, cofundador do PayPal e investidor em diversas startups, como o Facebook, o próximo Bill Gates não criará um sistema operacional. O próximo Larry Page ou Sergey Brin não desenvolverá um mecanismo de busca. E o próximo Mark Zuckerberg não criará uma rede social."
+  },
+
+  {
+    "position": "6",
+    "titulo": "AI Superpowers",
+    "rosto": "../assets/imagens/tecnologia6.jpg",
+    "autor":"Kai-Fu Lee",
+    "descricao":"Traduzido do inglês-AI Superpowers: China, Vale do Silício e a Nova Ordem Mundial é um livro de não ficção de 2018 de Kai-Fu Lee, pioneiro em Inteligência Artificial, especialista na China e capitalista de risco."
+  },
+
+  {
+    "position": "7",
+    "titulo": "O Dilema da Inovação",
+    "rosto": "../assets/imagens/tecnologia7.jpg",
+    "autor":"Clayton M. Christensen",
+    "descricao":"Este livro assume a posição radical de que grandes empresas fracassam exatamente porque fazem tudo certo."
+  },
+
+  {
+    "position": "8",
+    "titulo":"Código Limpo",
+    "rosto": "../assets/imagens/tecnologia8.jpg",
+    "autor":"Robert Cecil Martin",
+    "descricao":"Mesmo um código ruim pode funcionar. Mas se ele não for limpo, pode acabar com uma empresa de desenvolvimento. Perdem-se a cada ano horas incontáveis e recursos importantes devido a um código mal escrito. Mas não precisa ser assim"
+  },
+
+  {
+    "position": "9",
+    "titulo": "Arquitetura Limpa: O guia do artesão para estrutura e design de software",
+    "rosto": "../assets/imagens/tecnologia9.jpg",
+    "autor":" Robert Cecil Martin",
+    "descricao":"As regras universais de arquitetura de software aumentam dramaticamente a produtividade dos desenvolvedores ao longo da vida dos sistemas de software. Agora, aproveitando o sucesso dos seus best-sellers Código Limpo e O Codificador Limpo, o lendário artesão de software Robert C."
+  },
+
+  {
+    "position": "10",
+    "titulo": "Os Meios de Comunicação Como Extensões do Homem",
+    "rosto": "../assets/imagens/tecnologia10.jpg",
+    "autor":"Marshall McLuhan",
+    "descricao":"Traduzido do inglês-Entendendo a mídia: The Extensions of Man é um livro de Marshall McLuhan de 1964, no qual o autor propõe que a mídia, e não o conteúdo que ela carrega, seja o foco do estudo. Ele sugere que o meio afeta a sociedade em que desempenha um papel principalmente pelas características do meio e não pelo conteúdo."
+  }
+
+]
