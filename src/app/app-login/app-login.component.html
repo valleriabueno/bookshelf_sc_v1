@@ -10,7 +10,9 @@
       <form [formGroup]="formularioLogin" (ngSubmit)="loginFirebase()">
         <mat-form-field>
           <input matInput placeholder="Email de Login" formControlName="email">
+          
           <mat-error *ngIf="email?.errors?.['required']">Será necessário informar um e-mail</mat-error>
+
           <mat-error *ngIf="email?.errors?.['email']">O formato do e-mail não é valido</mat-error>
         </mat-form-field>
         <mat-form-field>
