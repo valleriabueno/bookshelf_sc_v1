@@ -1,0 +1,58 @@
+<mat-card>
+  <div *ngIf=" livrosEmpreendedorismo$ | async as livrosEmpreendedorismo; else loading;">
+    <mat-toolbar color="accent">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>LIVROS DE DIREITO</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <table mat-table [dataSource]="livrosEmpreendedorismo" class="mat-elevation-z8">
+
+       <!-- Position -->
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef class="titulos1"> Numero </th>
+    <td mat-cell *matCellDef="let direito" class="titulos"> {{direito.position}} </td>
+  </ng-container>
+
+      <!-- Imagem-->
+
+      <ng-container matColumnDef="rosto">
+        <th mat-header-cell *matHeaderCellDef class="titulos1">Capa do livro</th>
+        <td mat-cell *matCellDef="let direito">
+          <img [src]="direito.rosto" mat-card-md-image>
+        </td>
+      </ng-container>
+
+      <!-- Nome do livro -->
+      <ng-container matColumnDef="titulo">
+        <th mat-header-cell *matHeaderCellDef class="titulos1"> Titulo do Livro </th>
+        <td mat-cell *matCellDef="let direito" class="titulos"> {{ direito.titulo }}</td>
+      </ng-container>
+
+
+
+      <!-- Nome do autor -->
+      <ng-container matColumnDef="autor">
+        <th mat-header-cell *matHeaderCellDef class="titulos1"> Autor</th>
+        <td mat-cell *matCellDef="let direito" class="titulos"> {{ direito.autor }} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="visaoColunas"></tr>
+      <tr mat-row *matRowDef="let row; columns: visaoColunas;"></tr>
+    </table>
+  </div>
+  <ng-template #loading>
+    <div class="loading-spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  </ng-template>
+
+</mat-card>
