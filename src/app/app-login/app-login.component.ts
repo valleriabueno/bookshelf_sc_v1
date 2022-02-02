@@ -3,9 +3,11 @@ import { FormBuilder, FormControl, NgForm, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
-import { GoogleAuthProvider, getAuth, signInWithRedirect } from 'firebase/auth';
-import { environment } from 'src/environments/environment';
 import { initializeApp } from 'firebase/app';
+import { getAuth, GoogleAuthProvider, signInWithRedirect } from 'firebase/auth';
+import { environment } from 'src/environments/environment';
+
+import { AppRecuperaSenhaComponent } from '../app-recupera-senha/app-recupera-senha.component';
 import { AutenticacaoFirebaseService } from './../servicosInterface/autenticacao-firebase.service';
 
 const app = initializeApp(environment['firebase']);
@@ -24,6 +26,11 @@ export class AppLoginComponent {
     senha: new FormControl('', Validators.required),
   });
 
+  //Recuperar Senha
+  // formRecuperaSenha = this.loginBuilder.group({
+  //   email: new FormControl('', [Validators.required, Validators.email]),
+  // })
+
   mensagemErro?: string;
 
   hasUnitNumber = false;
@@ -32,6 +39,7 @@ export class AppLoginComponent {
     private loginBuilder: FormBuilder,
     @Inject(MAT_DIALOG_DATA) public conteudo: string,
     private telaLogin: MatDialog,
+    private telaSenha: MatDialog,
     private toast: HotToastService,
     private rotas: Router,
     private autenticacaoFirebaseService: AutenticacaoFirebaseService
@@ -111,4 +119,10 @@ export class AppLoginComponent {
     console.log(`Token [${this.token}] generated`);
   }
 
+  //Abrir Diálodo de recuperação de senha
+  abrirRecuperaSenha(erroMsg: string){
+    this.telaSenha.open(AppRecuperaSenhaComponent,{
+      data: erroMsg
+    })
+  }
 }
