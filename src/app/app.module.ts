@@ -33,6 +33,7 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { DireitoComponent } from './direito/direito.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { TecnologiaComponent } from './tecnologia/tecnologia.component';
+import { AppRecuperaSenhaComponent } from './app-recupera-senha/app-recupera-senha.component';
 
 
 import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
@@ -51,7 +52,8 @@ import { SugestoesComponent } from './sugestoes/sugestoes.component';
     PsicologiaComponent,
     TecnologiaComponent,
     EmpreendedorismoComponent,
-    SugestoesComponent
+    SugestoesComponent,
+    AppRecuperaSenhaComponent
 
 
   ],

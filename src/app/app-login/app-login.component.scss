@@ -85,3 +85,26 @@ re-captcha.is-invalid > div {
   border-radius: 0.2rem;
 }
 
+mat-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recaptcha{
+  margin: 15px;
+}
+
+.login-option mat-card {
+  height: 100%;
+  max-width: 100%;
+  margin: 10px;
+}
+
+.forgot-password:hover {
+  cursor: pointer;
+}
+
+.forgot-password a {
+  text-align: end;
+}
