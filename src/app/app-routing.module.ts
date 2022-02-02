@@ -1,5 +1,7 @@
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { TecnologiaComponent } from './tecnologia/tecnologia.component';
+import { TeatroComponent } from './teatro/teatro.component';
+
 import { DireitoComponent } from './direito/direito.component';
 import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { FeedComponent } from './feed/feed.component';
@@ -30,6 +32,10 @@ const routes: Routes = [
   },
   {
     path: 'tecnologia', component: TecnologiaComponent,
+    ...canActivate(enviarSemLogin)
+  },
+  {
+    path: 'teatro', component: TeatroComponent,
     ...canActivate(enviarSemLogin)
   },
   {

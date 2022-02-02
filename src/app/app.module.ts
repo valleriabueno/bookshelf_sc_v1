@@ -33,6 +33,7 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { DireitoComponent } from './direito/direito.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { TecnologiaComponent } from './tecnologia/tecnologia.component';
+import { TeatroComponent } from './teatro/teatro.component';
 
 import { FormsModule } from '@angular/forms';
 import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
@@ -49,6 +50,7 @@ import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSet
     DireitoComponent,
     PsicologiaComponent,
     TecnologiaComponent,
+    TeatroComponent,
 
 
   ],

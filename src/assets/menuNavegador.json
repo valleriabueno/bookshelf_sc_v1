@@ -5,6 +5,7 @@
   {"linkMenu": "/direito", "labelMenu":"Livros de Direito", "hab": true},
   {"linkMenu": "/psicologia", "labelMenu":"Livros de Psicologia", "hab": true},
   {"linkMenu": "/tecnologia", "labelMenu":"Livros de Tecnologia", "hab": true},
+  {"linkMenu": "/teatro", "labelMenu":"Livros de Teatro", "hab": true},
   {"linkMenu": "/clube", "labelMenu":"Pagina Usuário", "hab": false},
   {"linkMenu": "/leitura", "labelMenu":"Clubes de Leitura", "hab": false},
   {"linkMenu": "/estante", "labelMenu":"Estante Particular", "hab": false}

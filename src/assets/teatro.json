@@ -1,0 +1,82 @@
+[
+  {
+    "position": "1",
+    "titulo": "A Preparação do Ator",
+    "rosto": "../assets/imagens/teatro1.jpg",
+    "autor":"Constantin Stanislavski",
+    "descricao":"Coube a Stanislavski a importante tarefa de sistematizar os conhecimentos intuitivos dos grandes atores do passado e de explicação ao ator contemporâneo como agir no momento da criação ou da realização. O seu sistema não é uma continuação das ideias expostas nos velhos manuais"
+  },
+
+  {
+    "position": "2",
+    "titulo": "Teatro do oprimido: e outras poéticas políticas",
+    "rosto": "../assets/imagens/teatro2.jpg",
+    "autor":"Augusto Boal",
+    "descricao":"Augusto Boal (1931-2009) foi um dos maiores teatrólogos contemporâneos. O título de “Embaixador do Teatro Mundial”, conferido a ele pela Unesco em 2009, consagrou uma trajetória brilhante. Seus métodos e encenações correram o mundo desde 1971, quando foi preso e exilado pela ditadura."
+  },
+
+  {
+    "position": "3",
+    "titulo": "A Construção da Personagem",
+    "rosto": "../assets/imagens/teatro3.jpg",
+    "autor":"Constantin Stanislavski",
+    "descricao":"Constantin Stanislavski, mestre do teatro russo, disseca todo o trabalho que um ator deve executar para esquecer sua própria individualidade e assumir aquela à qual vai dar vida no palco"
+  },
+
+  {
+    "position": "4",
+    "titulo": "A Criação de um Papel",
+    "rosto": "../assets/imagens/teatro4.jpg",
+    "autor":"Constantin Stanislavski",
+    "descricao":"Constantin Stanislavski é, ao lado de Meyerhold, Piscator e Brecht, uma das mais brilhantes personalidades da história contemporânea do teatro. O grande ator, produtor e diretor russo foi um inovador das artes cênicas em todos os campos."
+  },
+
+  {
+    "position": "5",
+    "titulo": "Manual Mínimo do Ator",
+    "rosto": "../assets/imagens/teatro5.jpg",
+    "autor":"Dario Fo",
+    "descricao":"Livro indispensável e uma referência necessária para todos os que se interessam por conhecer as técnicas da arte teatral, mais especificamente do teatro popular, que conseguem sensibilizar o espectador e motivá-lo a ficar atento à sequência da narrativa dramática."
+  },
+
+  {
+    "position": "6",
+    "titulo": "Improvisação para o Teatro",
+    "rosto": "../assets/imagens/teatro6.jpg",
+    "autor":"Viola Spolin",
+    "descricao":"Este livro é uma espécie de bíblia dos educadores em jogos dramáticos e na arte do teatro. Manual útil para atores profissionais e amadores, professores e crianças. Para a escola e os centros comunitários oferece um detalhado programa de oficinas de trabalho. Aos diretores de teatro propicia uma compreensão dos problemas enfrentados pelos atores e das técnicas para solucioná-los. Promove, ainda, uma discussão dessa atividade na educação, na dança, na psiquiatria, na convivência social e na criatividade artística."
+  },
+
+  {
+    "position": "7",
+    "titulo": "Hamlet",
+    "rosto": "../assets/imagens/teatro7.jpg",
+    "autor":"William Shakespeare",
+    "descricao":"A tragédia de Hamlet, príncipe da Dinamarca, geralmente abreviada apenas como Hamlet, é uma tragédia de William Shakespeare, escrita entre 1599 e 1601"
+  },
+
+  {
+    "position": "8",
+    "titulo":"O teatro épico",
+    "rosto": "../assets/imagens/teatro8.jpg",
+    "autor":"Anatol Rosenfeld",
+    "descricao":"O Teatro Epico e uma importante contribuicao de Anatol Rosenfeld para os estudos literarios e teatrais. Tendo em vista a relevancia que a nocao do epico assumiu na critica contemporanea, devido mormente a obra de Brecht, o levantamento aqui efetuado"
+  },
+
+  {
+    "position": "9",
+    "titulo": "Romeu e Julieta",
+    "rosto": "../assets/imagens/teatro9.jpg",
+    "autor":"William Shakespeare",
+    "descricao":"Romeu e Julieta é uma tragédia escrita entre 1591 e 1595, nos primórdios da carreira literária de William Shakespeare, sobre dois adolescentes cuja morte acaba unindo suas famílias, outrora em pé de guerra."
+  },
+
+  {
+    "position": "10",
+    "titulo": "Auto da Barca do Inferno",
+    "rosto": "../assets/imagens/teatro10.jpg",
+    "autor":"Gil Vicente ",
+    "descricao":"O Auto da Barca do Inferno é uma complexa alegoria dramática de Gil Vicente, representada pela primeira vez em 1517. É a primeira parte da chamada trilogia das Barcas. Os especialistas classificam-na como moralidade, mesmo que muitas vezes se aproxime da farsa"
+  }
+
+]
