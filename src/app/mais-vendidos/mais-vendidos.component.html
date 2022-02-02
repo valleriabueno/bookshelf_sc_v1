@@ -1,0 +1,48 @@
+<div *ngIf="books.length === 15">
+  <div class="header">
+    <h1>Os 15 Livros Mais Vendidos do {{selectedOption}}!</h1>
+    <mat-form-field appearance="fill">
+      <mat-select [(ngModel)]="selectedOption">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="selectedOption === 'Mundo'">
+    <mat-card *ngFor="let book of books">
+      <mat-card-title>{{book.items[0].volumeInfo.title}}</mat-card-title>
+      <mat-card-subtitle>
+        <span *ngFor="let author of book.items[0].volumeInfo.authors">
+          {{author}}
+        </span>
+      </mat-card-subtitle>
+      <mat-card-content>
+        <img src={{book.items[0].volumeInfo.imageLinks.thumbnail}}>
+        <p>
+          {{book.items[0].volumeInfo.description}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div *ngIf="selectedOption === 'Brasil'">
+    <div *ngIf="bestSellerBr$ | async as bestSellerBr">
+      <mat-card *ngFor="let book of bestSellerBr">
+        <mat-card-title>{{book.title}}</mat-card-title>
+        <mat-card-subtitle>
+          <span>
+            {{book.author}}
+          </span>
+        </mat-card-subtitle>
+        <mat-card-content>
+          <img src={{book.thumbnail}}>
+          <p>
+            {{book.description}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

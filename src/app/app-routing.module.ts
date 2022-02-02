@@ -1,3 +1,4 @@
+import { MaisVendidosComponent } from './mais-vendidos/mais-vendidos.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { TecnologiaComponent } from './tecnologia/tecnologia.component';
 import { DireitoComponent } from './direito/direito.component';
@@ -40,6 +41,10 @@ const routes: Routes = [
   },
   {
     path: 'empreendedorismo', component: EmpreendedorismoComponent,
+    ...canActivate(enviarSemLogin)
+  },
+  {
+    path: 'mais_vendidos', component: MaisVendidosComponent,
     ...canActivate(enviarSemLogin)
   },
   {

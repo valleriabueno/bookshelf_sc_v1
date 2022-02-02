@@ -33,8 +33,8 @@ import { AppCadastroComponent } from './app-cadastro/app-cadastro.component';
 import { DireitoComponent } from './direito/direito.component';
 import { PsicologiaComponent } from './psicologia/psicologia.component';
 import { TecnologiaComponent } from './tecnologia/tecnologia.component';
+import { MaisVendidosComponent } from './mais-vendidos/mais-vendidos.component';
 import { AppRecuperaSenhaComponent } from './app-recupera-senha/app-recupera-senha.component';
-
 
 import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
 import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
@@ -53,9 +53,8 @@ import { SugestoesComponent } from './sugestoes/sugestoes.component';
     TecnologiaComponent,
     EmpreendedorismoComponent,
     SugestoesComponent,
+    MaisVendidosComponent,
     AppRecuperaSenhaComponent
-
-
   ],
   imports: [
     BrowserModule,
